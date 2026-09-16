@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Matrícula - Sistema Acadêmico</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sistema de Gerenciamento Acadêmico</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="alunos.html">Alunos</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="matriculas.html">Matrículas</a>
+    <a href="usuarios.html">Usuários</a>
+  </nav>
+
+  <main>
+    <h2>Cadastro de Matrícula</h2>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Dados da Matrícula</legend>
+
+        <label for="aluno">Aluno</label>
+        <select id="aluno" name="aluno">
+          <option value="">Selecione um aluno</option>
+          <option value="ana">Ana Souza</option>
+          <option value="bruno">Bruno Lima</option>
+          <option value="carla">Carla Mendes</option>
+        </select>
+
+        <label for="cursoMatricula">Curso</label>
+        <select id="cursoMatricula" name="cursoMatricula">
+          <option value="">Selecione um curso</option>
+          <option value="cc">Ciência da Computação</option>
+          <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+          <option value="es">Engenharia de Software</option>
+        </select>
+
+        <label for="dataMatricula">Data da matrícula</label>
+        <input type="date" id="dataMatricula" name="dataMatricula">
+
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" name="observacoes" placeholder="Observações adicionais sobre a matrícula"></textarea>
+      </fieldset>
+
+      <button type="submit">Salvar</button>
+      <button type="reset" class="botao-secundario">Limpar</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistema de Gerenciamento Acadêmico - Univest</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Aluno - Sistema Acadêmico</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sistema de Gerenciamento Acadêmico</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="alunos.html">Alunos</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="matriculas.html">Matrículas</a>
+    <a href="usuarios.html">Usuários</a>
+  </nav>
+
+  <main>
+    <h2>Cadastro de Aluno</h2>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome do aluno">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="aluno@exemplo.com">
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento" name="nascimento">
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Acadêmicos</legend>
+
+        <label for="curso">Curso</label>
+        <select id="curso" name="curso">
+          <option value="">Selecione um curso</option>
+          <option value="cc">Ciência da Computação</option>
+          <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+          <option value="es">Engenharia de Software</option>
+        </select>
+
+        <label for="matricula">Número de matrícula</label>
+        <input type="text" id="matricula" name="matricula" placeholder="Ex: 2026001234">
+      </fieldset>
+
+      <button type="submit">Salvar</button>
+      <button type="reset" class="botao-secundario">Limpar</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistema de Gerenciamento Acadêmico - Univest</p>
+  </footer>
+
+</body>
+</html>
